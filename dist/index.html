@@ -11,7 +11,7 @@
 </head>
 <body class="m-0 p-0 box-border">
     <header class="m-5 px-4 py-2 text-center text-4xl font-black">
-        <p id="personality">Plang Gabriel Damwesh</p>
+        <p id="personality"></p>
     </header>
     <main class="m-5 px-4 py-2">
         <article>
@@ -19,6 +19,9 @@
         </article>
     </main>
     <script>
+        let personality = document.getElementById("personality")
+        personality.innerText = "Plang Gabriel Damwesh"
+
         let infoAboutMe = [
             {
                 title: "Background Information",
