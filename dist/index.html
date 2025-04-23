@@ -15,7 +15,7 @@
     </header>
     <main class="m-5 px-4 py-2">
         <article>
-            <div id="aboutMe"></div>
+            <ul style="list-style-type:none; padding: 0; margin: 0; line-height: 2;" id="aboutMe"></ul>
         </article>
     </main>
     <script>
@@ -41,19 +41,19 @@
         ]
 
         infoAboutMe.forEach((section) => {
-            const newTitle = document.createElement("h3")
+            const newTitle = document.createElement("li")
             newTitle.innerHTML = "<div class='pb-5 text-2xl font-bold'>" + section.title + "</div>"
             aboutMe.appendChild(newTitle)
 
-            const paragraph1 = document.createElement("p")
+            const paragraph1 = document.createElement("li")
             paragraph1.innerHTML = "<div class='pb-5'>" + section.paragraph1 + "</div>"
             aboutMe.appendChild(paragraph1)
 
-            const paragraph2 = document.createElement("p")
+            const paragraph2 = document.createElement("li")
             paragraph2.innerHTML = "<div class='pb-5'>" + section.paragraph2 + "</div>"
             aboutMe.appendChild(paragraph2)
 
-            const paragraph3 = document.createElement("p")
+            const paragraph3 = document.createElement("li")
             paragraph3.innerHTML = "<div class='pb-5'>" + section.paragraph3 + "</div>"
             aboutMe.appendChild(paragraph3)
         })
